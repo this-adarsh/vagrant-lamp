@@ -61,7 +61,7 @@ echo "-- Install phpMyAdmin --"
 wget -k https://files.phpmyadmin.net/phpMyAdmin/4.8.0.1/phpMyAdmin-4.8.0.1-english.tar.gz
 sudo tar -xzvf phpMyAdmin-4.8.0.1-english.tar.gz -C /var/www/
 sudo rm phpMyAdmin-4.8.0.1-english.tar.gz
-sudo mv /var/www/phpMyAdmin-4.8.0.1-english/ /var/www/html/phpmyadmin
+sudo mv /var/www/phpMyAdmin-4.8.0.1-english/ /var/www/html/phpmyadmin/
 
 echo "-- Setup databases --"
 mysql -uroot -proot -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root' WITH GRANT OPTION; FLUSH PRIVILEGES;"
