@@ -22,7 +22,7 @@ echo "-- Install packages --"
 sudo apt-get install -y --force-yes apache2 mysql-server-5.7 git-core 
 sudo apt-get install -y --force-yes php7.1-common php7.1-dev php7.1-json php7.1-opcache php7.1-cli libapache2-mod-php7.1
 sudo apt-get install -y --force-yes php7.1 php7.1-mysql php7.1-fpm php7.1-curl php7.1-gd php7.1-mcrypt php7.1-mbstring
-sudo apt-get install -y --force-yes php7.1-bcmath php7.1-zip
+sudo apt-get install -y --force-yes php7.1-bcmath php7.1-zip php7.1-intl php7.1-intl php7.1-soap
 Update
 
 echo "-- Configure PHP &Apache --"
