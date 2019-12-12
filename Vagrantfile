@@ -8,7 +8,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.box = "v0rtex/xenial64"
 
     # Mount shared folder using NFS
-    config.vm.synced_folder "public", "/var/www/html"
+    config.vm.synced_folder "public", "/var/www/html", :mount_options => ["dmode=777","fmode=666"]
 
     # Do some network configuration
     config.vm.network "private_network", ip: "192.168.11.11"
